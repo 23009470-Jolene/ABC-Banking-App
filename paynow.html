@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('bank.jpg'); /* Path to your background image */
+            background-size: cover; /* Make the background cover the entire area */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            color: black; /* Set the default text color */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        article {
+            background-color: rgba(224, 219, 219, 0.8); /* Semi-transparent background for better readability */
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            border-radius: 10px;
+            height: 900px;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pay Now</h1>
+
+    <section>
+        <article>
+            <p>Search by name or mobile number</p>
+            <h5>CONTACTS</h5>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="confirmation.html">Sally</a></td>
+                    <td><a href="confirmation.html">+6514578934</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="confirmation.html">Noah</a></td>
+                    <td><a href="confirmation.html">+6578364729</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="confirmation.html">Josephine</a></td>
+                    <td><a href="confirmation.html">+6536278904</a></td>
+                  </tr>
+                </tbody>
+              </table>
+        </article>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

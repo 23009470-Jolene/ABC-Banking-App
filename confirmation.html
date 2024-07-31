@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('bank.jpg'); /* Path to your background image */
+            background-size: cover; /* Make the background cover the entire area */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            color: black; /* Set the default text color */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+    
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        article {
+        float: left;
+        padding: 20px;
+        width: 100%;
+        background-color: rgb(224, 219, 219);
+        height: 600px; /* only for demonstration, should be removed */
+        }
+    
+        /* Clear floats after the columns */
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+        }
+        .btn-light a {
+            color: inherit; /* Make link color inherit button color */
+            text-decoration: none; /* Remove underline */
+        }
+    </style>
+</head>
+<body>
+    <hear>
+        <h1>Pay Now</h1>
+    </hear>
+    <section>
+        <article>
+            <p>Pay to</p>
+            <h5>Sally</h5>
+            <p>+6514578934 Sally</p>
+            <input type="text" class="form-control" placeholder="Amount" aria-label="Amount">
+            <br>
+            <input type="text" class="form-control" placeholder="Add a message" aria-label="Add a message">
+            <br><br>
+            <button type="submit" class="btn btn-light"><a href="successful.html">Next</a></button>        </article>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>

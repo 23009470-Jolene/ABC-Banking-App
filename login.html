@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+         body {
+            background-image: url('bank.jpg'); /* Path to your background image */
+            background-size: cover; /* Make the background cover the entire area */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            color: black; /* Set the default text color to white for better contrast */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+    
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        article {
+        float: left;
+        padding: 20px;
+        width: 100%;
+        background-color: rgb(224, 219, 219);
+        height: 400px; /* only for demonstration, should be removed */
+        }
+    
+        /* Clear floats after the columns */
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+            
+        }
+        } 
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a class="nav-link" href="paynow.html">Paynow</a></a>
+        <a class="nav-link" href="#">Rewards</a>
+        <a class="nav-link" href="#">Scan & Pay</a>
+        <a class="nav-link" href="#">Money Insights</a>
+        <a class="nav-link" href="#">Invest</a>
+    </nav>
+
+    <h1>Good afternoon!</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Balance</th>
+            <th scope="col">Your Net Worth</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>******</td>
+            <td>******</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section>
+        <article>
+            <p>Your Activity</p>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Information</th>
+                    <th scope="col">Amount($)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>15 July</td>
+                    <td>Fund Transfer to Sally via Paynow</td>
+                    <td>-100.00</td>
+                  </tr>
+                  <tr>
+                    <td>10 July</td>
+                    <td>Fund Transfer from Sally via Paynow</td>
+                    <td>+50.00</td>
+                  </tr>
+                  <tr>
+                    <td>4 June</td>
+                    <td>Nets QR Purchase Banmian</td>
+                    <td>-11.00</td>
+                  </tr>
+                  <tr>
+                    <td>3 June</td>
+                    <td>Nets QR Purchase Takoyaki</td>
+                    <td>-2.00</td>
+                  </tr>
+                  <tr>
+                    <td>1 June</td>
+                    <td>Fund Transfer to Noah via Paynow</td>
+                    <td>-10.00</td>
+                  </tr>
+                </tbody>
+              </table>
+        </article>
+      </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>
